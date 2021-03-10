@@ -36,12 +36,10 @@ TEST_CASE("Good snowman code") {
 	CHECK(nospaces(snowman(31114411)) == nospaces("  _\n /_\\ \n(.,.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(41114411)) == nospaces(" ___ \n(_*_) \n(.,.)\n( : )\n( : )\n"));
 
-	CHECK(nospaces(snowman(11114411)) == nospaces("_===_\n(.,.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(12114411)) == nospaces("_===_\n(...)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(13114411)) == nospaces("_===_\n(._.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(14114411)) == nospaces("_===_\n(. .)\n( : )\n( : )\n"));
 
-	CHECK(nospaces(snowman(11114411)) == nospaces("_===_\n(.,.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(11214411)) == nospaces("_===_\n(o,.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(11314411)) == nospaces("_===_\n(O,.)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(11414411)) == nospaces("_===_\n(-,.)\n( : )\n( : )\n"));
@@ -50,26 +48,21 @@ TEST_CASE("Good snowman code") {
 	CHECK(nospaces(snowman(11134411)) == nospaces("_===_\n(.,O)\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(11144411)) == nospaces("_===_\n(.,-)\n( : )\n( : )\n"));
 
-	CHECK(nospaces(snowman(11111411)) == nospaces(" _===_\n<(.,.)\n ( : )\n ( : )\n"));
 	CHECK(nospaces(snowman(11112411)) == nospaces(" _===_\n\\(.,.)\n ( : )\n ( : )\n"));
-	CHECK(nospaces(snowman(11113411)) == nospaces(" _===_\n/(.,.)\n ( : )\n ( : )\n"));
-
-	CHECK(nospaces(snowman(11114111)) == nospaces(" _===_\n(.,.)>\n( : )\n( : )\n"));
 	CHECK(nospaces(snowman(11114211)) == nospaces("_===_\n(.,.)/\n( : )\n( : )\n"));
-	CHECK(nospaces(snowman(11114311)) == nospaces("_===_\n(.,.)\\\n( : )\n( : )\n"));
+
+	CHECK(nospaces(snowman(11112411)) == nospaces(" _===_\n\\(.,.)\n ( : )\\\n ( : )\n"));
+	CHECK(nospaces(snowman(11112411)) == nospaces(" _===_\n\\(.,.)\n ( : )>\n ( : )\n"));
+
+	CHECK(nospaces(snowman(11114211)) == nospaces(" _===_\n (.,.)/\n/( : )\n ( : )\n"));
+	CHECK(nospaces(snowman(11114211)) == nospaces(" _===_\n (.,.)/\n<( : )\n ( : )\n"));
+
 	
 	CHECK(nospaces(snowman(11111411)) == nospaces(" _===_\n (.,.)\n<( : )\n ( : )\n"));
-	CHECK(nospaces(snowman(11112411)) == nospaces(" _===_\n (.,.)\n\\( : )\n ( : )\n"));
 	CHECK(nospaces(snowman(11113411)) == nospaces(" _===_\n (.,.)\n/( : )\n ( : )\n"));
 
 	CHECK(nospaces(snowman(11114111)) == nospaces("_===_\n(.,.)\n( : )>\n( : )\n"));
-    CHECK(nospaces(snowman(11114211)) == nospaces("_===_\n(.,.)\n( : )/\n( : )\n"));
     CHECK(nospaces(snowman(11114311)) == nospaces("_===_\n(.,.)\n( : )\\ \n( : )\n"));
-
-	CHECK(nospaces(snowman(11114111)) == nospaces("_===_\n(.,.)\n( : )>\n( : )\n"));
-    CHECK(nospaces(snowman(11111211)) == nospaces(" _===_\n<(.,.)\n ( : )/\n ( : )\n"));
-	CHECK(nospaces(snowman(11112111)) == nospaces(" _===_\n\\(.,.)\n ( : )\n ( : )\n"));
-	CHECK(nospaces(snowman(11113311)) == nospaces(" _===_\n/(.,.)\n ( : ) \n ( : )\n"));
 
     CHECK(nospaces(snowman(11114421)) == nospaces("_===_\n(.,.)\n(] [)\n( : )\n"));
     CHECK(nospaces(snowman(11114431)) == nospaces("_===_\n(.,.)\n(> <)\n( : )\n"));
